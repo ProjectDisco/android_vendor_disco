@@ -8,4 +8,5 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
     service_contexts \
-    genfs_contexts
+    genfs_contexts \
+    installd.te
