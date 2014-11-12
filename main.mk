@@ -1,5 +1,6 @@
 PRODUCT_BRAND ?= disco
 
+DISCO_VERSION := $(shell echo $dver)
 ROM_VERSION := disco-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)
 MOD_VERSION := disco-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)
 
