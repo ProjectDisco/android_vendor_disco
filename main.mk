@@ -9,7 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/disco/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.disco.version=$(DISCO_VERSION) \
+    ro.disco.version=$(ROM_VERSION) \
     ro.mod.version=$(MOD_VERSION) \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
