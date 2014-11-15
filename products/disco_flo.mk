@@ -7,6 +7,7 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := flo
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := ASUS
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Build prop fingerprint overrides
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="razor" BUILD_FINGERPRINT="google/razor/flo:5.0/LRX21T/1576899:user/release-keys" PRIVATE_BUILD_DESC="razor-user 5.0 LRX21T 1576899 release-keys"
