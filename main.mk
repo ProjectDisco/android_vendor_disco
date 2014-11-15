@@ -1,23 +1,25 @@
 PRODUCT_BRAND ?= disco
 
-DISCO_VERSION := $(shell echo $dver)
-ROM_VERSION := disco-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)
-MOD_VERSION := disco-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)
+# define disco version
+DISCO_VERSION := 1.0
+
+ROM_VERSION := disco-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)-$(TARGET_PRODUCT)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay
 
 PRODUCT_COPY_FILES += \
-    vendor/disco/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/disco/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/disco/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.disco.version=$(ROM_VERSION) \
-    ro.mod.version=$(MOD_VERSION) \
+    ro.mod.version=$(ROM_VERSION) \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
+    ro.com.android.dataroaming=false
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 
