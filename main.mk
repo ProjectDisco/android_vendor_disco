@@ -3,7 +3,7 @@ PRODUCT_BRAND ?= disco
 # define disco version
 DISCO_VERSION := 1.0
 
-ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y-%m-%d)
+ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y.%m.%d)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay
 
