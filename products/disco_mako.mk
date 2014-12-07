@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for hammerhead
+# Inherit AOSP device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Setup device specific product configuration
