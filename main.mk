@@ -9,7 +9,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay
 
 PRODUCT_COPY_FILES += \
     vendor/disco/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    vendor/disco/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/disco/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/disco/prebuilt/system/app/LockClock.apk:system/app/LockClock.apk
 
