@@ -18,9 +18,9 @@
 if [ $# -eq 1 ]; then
     TOP=$1
     DEVICE=$TARGET_DEVICE
-elif [ -n "$(gettop)" ]; then
-    TOP=$(gettop)
-    DEVICE=$(get_build_var TARGET_DEVICE)
+elif [ -n "$ANDROID_BUILD_TOP" ]; then
+    TOP=$ANDROID_BUILD_TOP
+    DEVICE=$TARGET_DEVICE
 else
     echo "Please run envsetup.sh and lunch before running this script,"
     echo "or provide the build root directory as the first parameter."
