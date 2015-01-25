@@ -13,6 +13,7 @@ BOARD_SEPOLICY_UNION += \
     vold.te \
     app.te \
     bootanim.te \
+    drmserver.te \
     file.te \
     file_contexts \
     mediaserver.te \
