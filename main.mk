@@ -8,10 +8,9 @@ ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y.%m.%d)
 PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay
 
 PRODUCT_COPY_FILES += \
-    vendor/disco/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/disco/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/disco/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
-    vendor/disco/prebuilt/system/app/LockClock.apk:system/app/LockClock.apk \
-    vendor/disco/prebuilt/system/xbin/busybox:system/xbin/busybox
+    vendor/disco/prebuilt/system/app/LockClock.apk:system/app/LockClock.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.disco.version=$(ROM_VERSION) \
@@ -33,18 +32,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# Chromium Prebuilt
+# Prebuilt Chromium
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 -include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/disco/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/disco/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/disco/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    vendor/disco/prebuilt/system/addon.d/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/disco/prebuilt/system/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/disco/prebuilt/system/bin/su:system/bin/su \
+    vendor/disco/prebuilt/system/bin/supolicy:system/bin/supolicy
 
-# stock ui sounds
+# Lollipop UI Sounds
 PRODUCT_COPY_FILES += \
     vendor/disco/overlay/system/media/audio/ui/audio_end.ogg:system/media/audio/ui/audio_end.ogg \
     vendor/disco/overlay/system/media/audio/ui/audio_initiate.ogg:system/media/audio/ui/audio_initiate.ogg \
