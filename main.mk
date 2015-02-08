@@ -37,13 +37,6 @@ ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 -include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
 
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/disco/prebuilt/system/addon.d/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/disco/prebuilt/system/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/disco/prebuilt/system/bin/su:system/bin/su \
-    vendor/disco/prebuilt/system/bin/supolicy:system/bin/supolicy
-
 # Lollipop UI Sounds
 PRODUCT_COPY_FILES += \
     vendor/disco/overlay/system/media/audio/ui/audio_end.ogg:system/media/audio/ui/audio_end.ogg \
