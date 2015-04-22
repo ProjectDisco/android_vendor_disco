@@ -1,7 +1,7 @@
 PRODUCT_BRAND ?= disco
 
 # define disco version
-DISCO_VERSION := 1.6
+DISCO_VERSION := 1.7
 
 ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y.%m.%d)
 
