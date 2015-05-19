@@ -1,7 +1,7 @@
 PRODUCT_BRAND ?= disco
 
 # define disco version
-DISCO_VERSION := 1.7b
+DISCO_VERSION := 1.8
 
 ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y.%m.%d)
 
@@ -30,11 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 else
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
-
-# Prebuilt Chromium
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
 
 # Lollipop UI Sounds
