@@ -1,0 +1,4 @@
+DISCO_VERSION := 2.0
+
+ROM_VERSION := $(TARGET_PRODUCT)-$(DISCO_VERSION)-$(shell date -u +%Y%m%d)
+
