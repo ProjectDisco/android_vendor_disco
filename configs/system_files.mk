@@ -5,10 +5,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay/
 PRODUCT_COPY_FILES += \
 vendor/disco/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# LatinIME library
-PRODUCT_COPY_FILES += \
-vendor/disco/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-
 # Camera effects
 PRODUCT_COPY_FILES += \
 vendor/disco/prebuilt/system/media/LMprec_508.emd:system/media/LMprec_508.emd \
