@@ -4,7 +4,7 @@ ifeq (disco_shamu,$(TARGET_PRODUCT))
 include vendor/disco/main.mk
 
 # Inherit device configuration
-$(call inherit-product, device/lge/shamu/full_shamu.mk)
+$(call inherit-product, device/moto/shamu/full_shamu.mk)
 
 # Setup device specific product configuration
 PRODUCT_NAME := disco_shamu
