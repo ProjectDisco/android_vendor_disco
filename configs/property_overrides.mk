@@ -1,3 +1,4 @@
+# AOSP fixes
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -7,6 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy
 
-# LatinIME library for gesture typing
-PRODUCT_COPY_FILES += \
-	vendor/disco/prebuilt/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+# ProjectDisco version in build.prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.disco.version=$(ROM_VERSION)
