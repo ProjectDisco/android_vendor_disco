@@ -11,4 +11,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ProjectDisco version in build.prop
 include vendor/disco/configs/version.mk
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.disco.version=$(ROM_VERSION)
+    ro.disco.version=$(DISCO_VERSION)
