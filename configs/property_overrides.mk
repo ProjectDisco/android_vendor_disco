@@ -12,3 +12,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 include vendor/disco/configs/version.mk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.disco.version=$(DISCO_VERSION)
+
+# Use Google's stock sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Titania.ogg \
+    ro.config.notification_sound=Tethys.ogg \
+    ro.config.alarm_alert=Osmium.ogg
