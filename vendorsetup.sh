@@ -1,4 +1,4 @@
-add_lunch_combo disco_hammerhead-userdebug
-add_lunch_combo disco_mako-userdebug
-add_lunch_combo disco_shamu-userdebug
-add_lunch_combo disco_emulator-userdebug
+for product_codename in $(cat vendor/disco/configs/products.txt)
+do
+    add_lunch_combo disco_$product_codename-userdebug
+done
