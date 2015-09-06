@@ -1,4 +1,0 @@
-hammerhead
-mako
-shamu
-emulator
