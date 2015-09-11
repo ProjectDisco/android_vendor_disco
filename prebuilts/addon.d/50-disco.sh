@@ -41,3 +41,8 @@ case "$1" in
   ;;
 esac
 
+# Delete /data/data/com.android.providers.telephony/databases/telephony.db
+# to fix "Unfortunately the process com.android.phone has stopped" after a dirty flash.
+# Telephony will re-generate it.
+rm /data/data/com.android.providers.telephony/databases/telephony.db
+
