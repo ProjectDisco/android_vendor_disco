@@ -1,5 +1,8 @@
 ifeq (disco_hammerhead,$(TARGET_PRODUCT))
 
+# Screen resolution
+TARGET_SCREEN_RES := 1920x1080
+
 # Include ProjectDisco main configuration
 include vendor/disco/main.mk
 

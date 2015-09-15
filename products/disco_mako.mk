@@ -1,5 +1,8 @@
 ifeq (disco_mako,$(TARGET_PRODUCT))
 
+# Screen resolution
+TARGET_SCREEN_RES := 1280x720
+
 # Include ProjectDisco main configuration
 include vendor/disco/main.mk
 
