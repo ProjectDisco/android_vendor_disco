@@ -19,7 +19,7 @@ PRODUCT_MANUFACTURER := Asus
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=nakasi \
-    BUILD_FINGERPRINT=google/nakasi/grouper:5.1.1/LMY48M/2167285:user/release-keys \
-    PRIVATE_BUILD_DESC="nakasi-user 5.1.1 LMY48M 2167285 release-keys"
+    BUILD_FINGERPRINT=google/nakasi/grouper:5.1.1/LVY48F/2168849:user/release-keys \
+    PRIVATE_BUILD_DESC="nakasi-user 5.1.1 LVY48F 2168849 release-keys"
 
 endif
