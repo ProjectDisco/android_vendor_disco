@@ -9,7 +9,3 @@ endif
 ifeq (1280x720,$(TARGET_SCREEN_RES))
 PRODUCT_BOOTANIMATION := vendor/disco/prebuilts/bootanimation/bootanimation-1280x720.zip
 endif
-
-ifeq (1280x800,$(TARGET_SCREEN_RES))
-PRODUCT_BOOTANIMATION := vendor/disco/prebuilts/bootanimation/bootanimation-1280x800.zip
-endif
