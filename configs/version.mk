@@ -1,6 +1,6 @@
 # Semantic versioning
 DISCO_VERSION_MAJOR := 2
-DISCO_VERSION_MINOR := 0
+DISCO_VERSION_MINOR := 5
 DISCO_VERSION_MICRO := 0
 
 # ProjectDisco version number
