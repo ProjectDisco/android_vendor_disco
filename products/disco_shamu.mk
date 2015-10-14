@@ -7,7 +7,7 @@ TARGET_SCREEN_RES := 1920x1080
 include vendor/disco/main.mk
 
 # Inherit device configuration
-$(call inherit-product, device/moto/shamu/full_shamu.mk)
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Setup device specific product configuration
 PRODUCT_NAME := disco_shamu
