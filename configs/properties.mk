@@ -18,3 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Titania.ogg \
     ro.config.notification_sound=Tethys.ogg \
     ro.config.alarm_alert=Osmium.ogg
+
+# Build properties for only telephony devices
+ifeq (true,$(TARGET_IS_TELEPHONY_DEVICE))
+# Turn off carrier provisioning by default to allow tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
+endif

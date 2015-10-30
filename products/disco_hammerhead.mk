@@ -3,6 +3,9 @@ ifeq (disco_hammerhead,$(TARGET_PRODUCT))
 # Screen resolution
 TARGET_SCREEN_RES := 1080x1920
 
+# Telephony device
+TARGET_IS_TELEPHONY_DEVICE := true
+
 # Include ProjectDisco main configuration
 include vendor/disco/main.mk
 
