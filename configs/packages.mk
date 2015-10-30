@@ -1,2 +1,3 @@
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    messaging
