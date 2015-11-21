@@ -1,4 +1,4 @@
-ifeq (disco_hammerhead,$(TARGET_PRODUCT))
+ifeq ($(TARGET_PRODUCT),disco_hammerhead)
 
 # Screen resolution
 TARGET_SCREEN_RES := 1080x1920

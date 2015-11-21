@@ -20,7 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Osmium.ogg
 
 # Build properties for only telephony devices
-ifeq (true,$(TARGET_IS_TELEPHONY_DEVICE))
+ifeq ($(TARGET_IS_TELEPHONY_DEVICE),true)
 # Turn off carrier provisioning by default to allow tethering
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0

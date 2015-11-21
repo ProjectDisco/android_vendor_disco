@@ -1,7 +1,7 @@
-ifeq (disco_hammerhead,$(TARGET_PRODUCT))
+ifeq ($(TARGET_PRODUCT),disco_hammerhead)
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/disco_hammerhead.mk
 endif
 
-ifeq (disco_shamu,$(TARGET_PRODUCT))
+ifeq ($(TARGET_PRODUCT),disco_shamu)
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/disco_shamu.mk
 endif

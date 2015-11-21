@@ -1,4 +1,4 @@
-ifeq (disco_shamu,$(TARGET_PRODUCT))
+ifeq ($(TARGET_PRODUCT),disco_shamu)
 
 # Screen resolution
 TARGET_SCREEN_RES := 1440x2560
