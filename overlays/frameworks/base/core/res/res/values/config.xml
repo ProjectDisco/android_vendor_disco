@@ -15,6 +15,7 @@
     <!-- Power menu items -->
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
+	<item>reboot</item>
         <item>airplane</item>
     </string-array>
 
