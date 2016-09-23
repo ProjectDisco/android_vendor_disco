@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Titania.ogg \
     ro.config.notification_sound=Tethys.ogg \
-    ro.config.alarm_alert=Osmium.ogg
+    ro.config.alarm_alert=Oxygen.ogg
 
 # Build properties for only telephony devices
 ifeq ($(TARGET_IS_TELEPHONY_DEVICE),true)
