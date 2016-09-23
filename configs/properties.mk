@@ -11,7 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy
 
 # ProjectDisco version in build.prop
-include vendor/disco/configs/version.mk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.disco.version=$(DISCO_VERSION)
 
