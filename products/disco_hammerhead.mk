@@ -1,11 +1,5 @@
 ifeq ($(TARGET_PRODUCT),disco_hammerhead)
 
-# Screen resolution
-TARGET_SCREEN_RES := 1080x1920
-
-# Telephony device
-TARGET_IS_TELEPHONY_DEVICE := true
-
 # Include ProjectDisco main configuration
 include vendor/disco/main.mk
 
@@ -20,10 +14,8 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Fingerprint
+# build.prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=hammerhead \
-    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0/MRA58K/2256973:user/release-keys \
-    PRIVATE_BUILD_DESC="hammerhead-user 6.0 MRA58K 2256973 release-keys"
+    PRODUCT_NAME=hammerhead
 
 endif
