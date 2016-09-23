@@ -1,2 +1,2 @@
 # Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlays/
+PRODUCT_PACKAGE_OVERLAYS += vendor/disco/overlay/
