@@ -6,6 +6,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.error.receiver.system.apps=com.google.android.gms \
     ro.com.android.dateformat=MM-dd-yyyy
 
 # ProjectDisco version in build.prop
