@@ -6,6 +6,9 @@ include vendor/disco/main.mk
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
+# Vendor blobs
+$(call inherit-product, vendor/lge/hammerhead/hammerhead-vendor.mk)
+
 # Setup device specific product configuration
 PRODUCT_NAME := disco_hammerhead
 PRODUCT_BRAND := google
