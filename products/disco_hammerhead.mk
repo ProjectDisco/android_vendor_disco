@@ -14,6 +14,9 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Allow text relocations
+TARGET_ALLOW_TEXT_RELOCATIONS := true
+
 # build.prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hammerhead
