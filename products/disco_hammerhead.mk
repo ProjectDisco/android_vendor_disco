@@ -19,6 +19,10 @@ PRODUCT_MANUFACTURER := LGE
 # Allow text relocations
 TARGET_ALLOW_TEXT_RELOCATIONS := true
 
+# Inline kernel building
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
 # build.prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hammerhead
